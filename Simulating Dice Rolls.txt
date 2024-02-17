@@ -1,0 +1,11 @@
+import random
+
+def roll_dice(num_dice, num_faces):
+    rolls = [random.randint(1, num_faces) for _ in range(num_dice)]
+    return rolls
+
+# Example usage:
+num_dice = 3
+num_faces = 6
+dice_rolls = roll_dice(num_dice, num_faces)
+print("Dice rolls:", dice_rolls)
